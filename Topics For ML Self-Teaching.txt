@@ -1,0 +1,37 @@
+Topics For ML Self-Teaching
+
+Hi Everyone! 
+
+I've tried to lay out the topics in a step by step way 
+where it is a little easier to go from one step to the next. 
+One thing that also helps is running yoru code on Google Colab so
+that your networks can train on a GPU, which is MUCH faster than training 
+on many laptops. On top of this, your code on Google Colab would be attached 
+to your Google Drive which makes it easy to share with others if you need another 
+opinion on your network.
+
+Because a lot of these models assume you have the right amount of data for them, it is 
+cool to find data on the internet and I'm thinking of making a document where you can 
+post the link to the data andwrite something about what it is. For instance, MRI images 
+can be described as "medical" along with the data type "image". Will figure this out more
+as time goes on.
+
+Happy learning!
+-Dante
+
+
+Topics List
+- Tensorflow
+	- I've noticed that Keras is a more intuitive flavor of Tensorflow to learn
+	- Just following the tutorials on setup/installation and the one about the MNIST dataset 
+	- Try to change the network by adding more Dense layers, Convolution layers, Regularization/Pooling layers, number of filters, activation functions, optimizers, loss functions, or try some architectures that aren't sequential (we can talk more about those). There are tutorials and documentation for all of these on the Keras website.
+- Rules of Thumb
+	- After you play with the MNIST network from the tensorflow/keras documentation, it's time to look up some establish "rules of thumb" that people use to train networks. These rules could be anything from "how to choose your learning rate" to "how to choose the number of filters at each layer". There are rules of thumb for most parameters that you maybe chose arbitrarily when first messing around with the MNIST network.
+	- Stanford has great lectures on this. Specifically ones titles "Training Neural Networks I" & "Training Neural Networks II"
+	- These rules should also give some information about Regularization and Validation
+- CNNs + NNs
+	- This is challenging because it more or less is all about the data. I recommended the MNIST dataset because it is comprised of images, but get flattened to be used with a standard NN. That offers some practice, but not really enough in the NN regime. For this, I'd recommend finding a dataset that pertains to something you're interested in. This is where you can play with time series data (using 1D functions included with Keras, or a prefered library), for instance. 
+- RNNs
+	- Keras supports Recurrent Neural Networks (RNNs). Again, I'm leaving this up to your discretion to get the data for the topic your interested in. Types of data that could be of interest are natural language or time series data as RNNs are typically used when the data changes with time. 
+- Bayesian Neural Netoworks
+	- I'll admit that I'm pretty unsure of what to do with this one. If anyonbe finds a good library for this in Python, let us know! What I can say about Bayesian Neural Networks is that they allow the use of prior information 
